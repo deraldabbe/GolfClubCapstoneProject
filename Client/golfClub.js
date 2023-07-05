@@ -1,32 +1,32 @@
-// Get form and recommendation result elements
+
 const form = document.getElementById('club-selection-form');
 const recommendationResult = document.getElementById('recommendation-result');
 const clubName = document.getElementById('club-name');
 const clubDistance = document.getElementById('club-distance');
 const clubImage = document.getElementById('club-image');
 
-// Add event listener to form submission
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Prevent form submission
 
-  // Get form values
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); 
+
+  
   const distance = document.getElementById('distance-input').value;
   const skillLevel = document.getElementById('skill-level-select').value;
   const gender = document.getElementById('gender').value;
 
-  // Call recommendation function
+  
   const recommendation = recommendClub(distance, skillLevel, gender);
 
-  // Display recommendation
+  
   clubName.textContent = recommendation.name;
   clubDistance.textContent = `Distance: ${recommendation.distance} yards`;
   clubImage.src = recommendation.image;
   recommendationResult.style.display = 'block';
 });
 
-// Function to recommend club based on distance, skill level, and gender
+
 function recommendClub(distance, skillLevel, gender) {
-  // Define club recommendations based on skill level, gender, and distance
+  
   const recommendations = {
     male: {
       beginner: [
@@ -142,10 +142,10 @@ function recommendClub(distance, skillLevel, gender) {
     },
   };
 
-  // Get club recommendations based on skill level and gender
+  
   const clubRecommendations = recommendations[gender.toLowerCase()][skillLevel.toLowerCase()];
 
-  // Find the club that best matches the desired distance
+  
   let recommendation = clubRecommendations[0];
   for (let i = 1; i < clubRecommendations.length; i++) {
     if (Math.abs(clubRecommendations[i].distance - distance) < Math.abs(recommendation.distance - distance)) {
@@ -156,12 +156,12 @@ function recommendClub(distance, skillLevel, gender) {
   return recommendation;
 }
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault(); 
   
-  // Get form inputs
-  var nameInput = document.getElementById('name-input');
-  var emailInput = document.getElementById('email-input');
-  var messageInput = document.getElementById('message-input');
+  
+  let nameInput = document.getElementById('name-input');
+  let emailInput = document.getElementById('email-input');
+  let messageInput = document.getElementById('message-input');
   
   // Validate form inputs
   if (nameInput.value === '' || emailInput.value === '' || messageInput.value === '') {
@@ -169,10 +169,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     return;
   }
   
-  // Display the pop-up message
+  
   var confirmation = confirm('Thank you for contacting us! You will be contacted shortly.');
   
-  // Clear form inputs if the user clicked OK
+  
   if (confirmation) {
     nameInput.value = '';
     emailInput.value = '';

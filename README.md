@@ -34,7 +34,7 @@ Navigate to the project directory: cd golf-app
 Install dependencies: npm install
 Set up the database: Create a PostgreSQL database and update the database connection details in the project's configuration file.
 Start the server: npm start
-Access the app in your web browser at http://localhost:3000
+Access the app in your web browser at http://localhost:4000
 Contributing
 
 Contributions to the Golf App are welcome! If you find any issues or have ideas for improvements, please submit an issue or a pull request.
