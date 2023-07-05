@@ -1,0 +1,25 @@
+Landing Page:
+
+Design a clean and visually appealing landing page that introduces the app.
+Include a brief description of the app's purpose and its main features.
+incorporating relevant golf imagery to create visual interest.
+
+Club Selection Form:
+Create a wireframe for the form where users input the desired distance and select their skill level.
+Include input fields for distance and a dropdown or radio buttons for skill level selection.
+Add a "Submit" button to trigger the club recommendation process.
+
+Club Recommendation View:
+Design a view that displays the recommended club based on the user's inputs.
+Show the recommended club's name, type, average distance, and any additional relevant details.
+A brief explanation or rationale for the recommendation to assist the user.
+
+User Profile:
+Create a wireframe for the user profile view where users can manage their account information.
+Include sections for the user's name, email, password change functionality, and skill level.
+Add options for users to update their profile information if needed.
+
+Skill Level Selection:
+Design a wireframe for the view where users can select their skill level.
+Include options or a dropdown menu for users to choose between beginner, amateur, or pro.
+A brief description of each skill level to help users make an informed selection.
