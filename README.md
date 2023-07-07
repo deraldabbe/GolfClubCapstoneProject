@@ -28,7 +28,7 @@ The Golf App is built with a responsive design, ensuring a seamless user experie
 
 The Golf App is built using the following technologies:
 
-- Frontend: JavaScript, React, HTML
+- Frontend: JavaScript, React, HTML, Axios
 - Backend: Node.js, Express
 - Database: PostgreSQL
 - APIs: Amazon.com API, Google Maps API
